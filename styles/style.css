@@ -1,34 +1,38 @@
 html {
 	font-size: 20px; /* px means "pixels": the base font size is now 10 pixels high  */
 	font-family: "Noto Serif", serif; /* this should be the rest of the output you got from Google fonts */
-	background-color: #d4d7d8;
+	background-color: #000000;
 }
 h1 {
 	font-size: 48px;
 	text-align: center;
+	color: cornsilk;
 }
 h2 {
 	font-size: 24px;
 	text-align: center;
+	color: cornsilk;
 }
 
 p {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 1px;
+	color: cornsilk;
 }
 li {
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 1px;
 	align-content: center;
+	color: cornsilk;
 }
 body {
 	width: 1200px;
 	margin: 0 auto;
-	background-color: #c9ccc9;
+	background-color: #0c0c0c;
 	padding: 0 20px 20px 20px;
-	border: 5px solid black;
+	border: 5px solid rgb(61, 61, 61);
 }
 img {
 	display: block;
