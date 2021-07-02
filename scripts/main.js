@@ -8,3 +8,27 @@ myImage.onclick = function() {
       myImage.setAttribute('src','images/kutluhankutbaylogo1.png');
     }
 }
+
+let myButton = document.querySelector('button');
+let myHeading = document.querySelector('h1');
+
+function setUserName() {
+    let myName = prompt('Please enter your name.');
+    if(!myName) {
+      setUserName();
+    } else {
+      localStorage.setItem('name', myName);
+      myHeading.textContent = 'Teşekkürler!, ' + myName;
+    }
+  }
+
+  if(!localStorage.getItem('name')) {
+    setUserName();
+  } else {
+    let storedName = localStorage.getItem('name');
+    myHeading.textContent = 'Teşekkürler!, ' + storedName;
+  }
+
+  myButton.onclick = function() {
+    setUserName();
+  }
